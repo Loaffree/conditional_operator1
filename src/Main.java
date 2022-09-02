@@ -12,7 +12,7 @@ public class Main {
         int age = 5;
         if (age >= 18)
             System.out.println("с совершеннолетием");
-        else
+        if (age < 18)
             System.out.println("возраст совершеннолетия ещё не наступил, и нужно немного подождать");
     }
 
