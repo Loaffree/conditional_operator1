@@ -12,7 +12,7 @@ public class Main {
         int age = 5;
         if (age >= 18)
             System.out.println("с совершеннолетием");
-        if (age < 18)
+        else
             System.out.println("возраст совершеннолетия ещё не наступил, и нужно немного подождать");
     }
 
@@ -20,9 +20,9 @@ public class Main {
         int age = 23;
         if ((age >= 7) && (age < 18))
             System.out.println("ребенок ходит в школу");
-        if ((age >= 18) && (age < 24))
+        else if ((age >= 18) && (age < 24))
             System.out.println("человек уже закончил школу и может отправляться в университет");
-        if (age >= 24)
+        else if (age >= 24)
             System.out.println("человек окончил университет и ему пора искать первую работу");
     }
 
@@ -32,9 +32,9 @@ public class Main {
         int seatPlace = 60;
         if ((numberOfPeople >= 0) && (numberOfPeople < seatPlace))
             System.out.println("в вагоне есть сидячее место");
-        if ((numberOfPeople >= seatPlace) && (numberOfPeople < wagonCapacity))
+        else if ((numberOfPeople >= seatPlace) && (numberOfPeople < wagonCapacity))
             System.out.println("в вагоне есть стоячее место");
-        if (numberOfPeople >= wagonCapacity)
+        else if (numberOfPeople >= wagonCapacity)
             System.out.println("вагон полностью забит");
     }
 }
